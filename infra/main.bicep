@@ -43,7 +43,7 @@ param userStorageContainerName string = 'user-content'
 
 param tokenStorageContainerName string = 'tokens'
 
-param appServiceSkuName string // Set in main.parameters.json
+param appServiceSkuName string = 'P1V3' // Set in main.parameters.json
 
 @allowed(['azure', 'openai', 'azure_custom'])
 param openAiHost string // Set in main.parameters.json
