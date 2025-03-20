@@ -96,7 +96,7 @@
       "value": 2
     },
     "appServiceSkuName": {
-      "value": "P1v3"
+      "value": "${AZURE_APP_SERVICE_SKU}"
     },
     "backendServiceName": {
       "value": "${AZURE_APP_SERVICE}"

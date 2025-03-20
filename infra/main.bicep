@@ -9,7 +9,7 @@ param environmentName string
 @description('Primary location for all resources')
 param location string
 
-param appServicePlanName string = '' // Set in main.parameters.json
+param appServicePlanName string = 'P1V3' // Set in main.parameters.json
 param appServicePlanCapacity int     // Set in main.parameters.json
 param backendServiceName string = '' // Set in main.parameters.json
 param resourceGroupName string = '' // Set in main.parameters.json
