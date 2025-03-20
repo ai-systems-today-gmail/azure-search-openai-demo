@@ -92,8 +92,11 @@
     "appServicePlanName": {
       "value": "${AZURE_APP_SERVICE_PLAN}"
     },
+    "appServicePlanCapacity": {
+      "value": 2
+    },
     "appServiceSkuName": {
-      "value": "${AZURE_APP_SERVICE_SKU=B1}"
+      "value": "${AZURE_APP_SERVICE_SKU=P1V3}"
     },
     "backendServiceName": {
       "value": "${AZURE_APP_SERVICE}"

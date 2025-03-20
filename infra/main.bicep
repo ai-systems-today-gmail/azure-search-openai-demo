@@ -10,6 +10,7 @@ param environmentName string
 param location string
 
 param appServicePlanName string = '' // Set in main.parameters.json
+param appServicePlanCapacity int
 param backendServiceName string = '' // Set in main.parameters.json
 param resourceGroupName string = '' // Set in main.parameters.json
 
@@ -363,7 +364,7 @@ module appServicePlan 'core/host/appserviceplan.bicep' = if (deploymentTarget ==
     tags: tags
     sku: {
       name: appServiceSkuName
-      capacity: 1
+      capacity: appServicePlanCapacity
     }
     kind: 'linux'
   }
