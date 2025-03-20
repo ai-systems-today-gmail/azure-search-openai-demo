@@ -90,7 +90,7 @@
       "value": "${AZURE_STORAGE_SKU=Standard_LRS}"
     },
     "appServicePlanName": {
-      "value": "P1v3"
+      "value": "${AZURE_APP_SERVICE_PLAN}"
     },
     "appServicePlanCapacity": {
       "value": 2
