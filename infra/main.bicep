@@ -10,7 +10,7 @@ param environmentName string
 param location string
 
 param appServicePlanName string = '' // Set in main.parameters.json
-param appServicePlanCapacity int
+param appServicePlanCapacity int     // Set in main.parameters.json
 param backendServiceName string = '' // Set in main.parameters.json
 param resourceGroupName string = '' // Set in main.parameters.json
 
