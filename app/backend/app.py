@@ -741,7 +741,7 @@ def create_app():
     app.register_blueprint(chat_history_cosmosdb_bp)
 
     # ADD THE HEALTH CHECK ROUTE HERE
-    @app.route("/health", methods=["GET"])
+    @app.route("/", methods=["GET"])
     async def health_check():
         return jsonify({"status": "ok"}), 200
 
