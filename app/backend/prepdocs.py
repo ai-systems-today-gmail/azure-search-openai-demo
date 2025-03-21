@@ -304,7 +304,7 @@ if __name__ == "__main__":
         # to avoid seeing the noisy INFO level logs from the Azure SDKs
         logger.setLevel(logging.DEBUG)
 
-    load_azd_env()
+    # load_azd_env()
 
     if os.getenv("AZURE_PUBLIC_NETWORK_ACCESS") == "Disabled":
         logger.error("AZURE_PUBLIC_NETWORK_ACCESS is set to Disabled. Exiting.")
